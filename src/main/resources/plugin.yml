@@ -1,0 +1,10 @@
+name: AdminStick
+main: com.swiggityswooty.adminstick.AdminStick
+author: Wahoozel
+version: 0.1
+commands:
+   adminstick:
+      description: The adminstick command.
+      usage: /<command> [args]
+      permission: <plugin name>.adminstick
+      permission-message: You don't have <permission>
