@@ -27,10 +27,10 @@ public class AdminStick extends JavaPlugin {
 	public void onDisable() {
 	}
 
-	public void giveBow(Player player) {
+	public void giveStick(Player player) {
 		
-		ItemStack bow = new ItemStack(Material.STICK, 1);
-		ItemMeta meta = bow.getItemMeta();
+		ItemStack stick = new ItemStack(Material.STICK, 1);
+		ItemMeta meta = stick.getItemMeta();
 		
 		List<String> lore = new ArrayList<String>();
 		lore.add(":D");
@@ -38,9 +38,9 @@ public class AdminStick extends JavaPlugin {
 		meta.setLore(lore);
 		meta.setDisplayName(ChatColor.DARK_RED + "Admin Stick");
 		
-		bow.setItemMeta(meta);
+		stick.setItemMeta(meta);
 		
-		player.getInventory().addItem(bow);
+		player.getInventory().addItem(stick);
 	}
 	
 	public void sendMessage(CommandSender sender, String message) {

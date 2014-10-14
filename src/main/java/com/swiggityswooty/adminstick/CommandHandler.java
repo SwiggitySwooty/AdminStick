@@ -41,7 +41,7 @@ public class CommandHandler implements CommandExecutor {
 					
 					plugin.sendMessage(sender, "Here's your stick.", ChatColor.DARK_PURPLE);
 					plugin.info(sender.getName() + " has an Admin Stick.");
-					plugin.giveBow((Player) sender);
+					plugin.giveStick((Player) sender);
 					
 				}
 				else if (args[0].equalsIgnoreCase("info")) {
