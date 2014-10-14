@@ -37,7 +37,7 @@ public class EventListener implements Listener {
 				
 			    if(hand.getType() == Material.STICK && hand.getItemMeta().getLore().get(0).equals(":D")){
 			    	
-					Location loc = player.getTargetBlock(null, 200).getLocation();
+					Location loc = player.getTargetBlock(null, 500).getLocation();
 			        player.launchProjectile(Arrow.class);
 			        world.createExplosion(loc.getX(), loc.getY(), loc.getZ(), 20.0F, false, false);
 			        for (int i = 0; i < 5; i++) {
