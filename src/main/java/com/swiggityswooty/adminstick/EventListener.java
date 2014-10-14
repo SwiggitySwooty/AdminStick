@@ -40,7 +40,7 @@ public class EventListener implements Listener {
 					Location loc = player.getTargetBlock(null, 500).getLocation();
 			        player.launchProjectile(Arrow.class);
 			        world.createExplosion(loc.getX(), loc.getY(), loc.getZ(), 20.0F, false, false);
-			        for (int i = 0; i < 5; i++) {
+			        for (int i = 0; i < 20; i++) {
 				        world.strikeLightning(loc);	
 			        }
 			    }	
